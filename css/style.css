@@ -1,0 +1,33 @@
+/* Css pour téléphone */
+.zone{
+    background: red no-repeat;
+    /* 
+    C'est la même chose que :
+    background-color: red;
+    background-repeat: no-repeat; 
+    */
+	color: white;
+	padding: 10px;
+}
+
+@media (min-width: 768px){
+    /* Ecran au minimum de 768px (tablette) la zone sera de couleur orange */
+    .zone{
+        background-color: orange;
+    }
+}
+
+@media (min-width: 992px){
+    /* Ecran au minimum de 992px (petit écran pc) la zone sera de couleur bleu */
+    .zone{
+        background-color: blue;
+        color: aquamarine;
+    }
+}
+
+@media (min-width: 1200px){
+    /* Ecran au minimum de 992px (écran pc) la zone sera de couleur vert */
+    .zone{
+        background-color: green;
+    }
+}
